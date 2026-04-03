@@ -5,6 +5,8 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, Sp
 
 from django.shortcuts import redirect
 
+from rest_framework import permissions
+
 urlpatterns = [
     path('', lambda request: redirect('swagger-ui'), name='index'),
     path('admin/', admin.site.urls),
@@ -18,7 +20,8 @@ urlpatterns = [
     path('api/dashboard/', include('dashboard.urls')),
     
     # Documentation
-    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
-    path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-    path('api/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+    path('api/schema/', SpectacularAPIView.as_view(permission_classes=[permissions.AllowAny]), name='schema'),
+    path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema', permission_classes=[permissions.AllowAny]), name='swagger-ui'),
+    path('api/redoc/', SpectacularRedocView.as_view(url_name='schema', permission_classes=[permissions.AllowAny]), name='redoc'),
 ]
+
