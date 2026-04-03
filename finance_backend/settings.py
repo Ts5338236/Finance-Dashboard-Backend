@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-mckdb0frr=8d40-tny5bkd99juh+wy=-amkw7qda%1_x3ug(y(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['finance-dashboard-backend-plum.vercel.app', '.vercel.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ["finance-dashboard-backend-nmrpb673b-ts5338236-7823s-projects.vercel.app",
+    ".vercel.app",   # allows all vercel subdomains (recommended)
+    "localhost",
+    "127.0.0.1"]
 
 
 # Application definition
@@ -137,9 +140,8 @@ AUTH_USER_MODEL = 'users.User'
 
 # CORS
 CORS_ALLOW_ALL_ORIGINS = True  # For development
-CSRF_TRUSTED_ORIGINS = ['https://finance-dashboard-backend-plum.vercel.app', 'https://*.vercel.app']
+CSRF_TRUSTED_ORIGINS = ['https://finance-dashboard-backend-nmrpb673b-ts5338236-7823s-projects.vercel.app', 'https://*.vercel.app']
 
-# REST Framework
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
