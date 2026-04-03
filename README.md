@@ -82,5 +82,5 @@ A production-quality Django/DRF backend for managing personal financial records 
 
 ## Documentation
 - **Home / Swagger UI**: [http://127.0.0.1:8000/](http://127.0.0.1:8000/) (Redirects to Swagger)
-- **Direct Swagger**: [http://127.0.0.1:8000/api/docs/](http://127.0.0.1:8000/api/docs/)
-- **Redoc**: [http://127.0.0.1:8000/api/redoc/](http://127.0.0.1:8000/api/redoc/)
+- **Direct Swagger**: [http://127.0.0.1:8000/api/docs/](http://127.0.0.1:8001/api/docs/)
+- **Redoc**: [http://127.0.0.1:8000/api/redoc/](http://127.0.0.1:8001/api/redoc/)
