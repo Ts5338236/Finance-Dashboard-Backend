@@ -81,5 +81,5 @@ A production-quality Django/DRF backend for managing personal financial records 
 - `GET /api/dashboard/summary/`: Get financial summary.
 
 ## Documentation
-- **DIrect Link**: finance-dashboard-backend-plum.vercel.app
+- **DIrect Link**: https://finance-dashboard-backend-plum.vercel.app
 - **Direct Swagger**: https://finance-dashboard-backend-plum.vercel.app/
